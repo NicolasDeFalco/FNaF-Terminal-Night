@@ -4,8 +4,8 @@ import java.io.IOException;
 
 import Console.ConsoleClear;
 import Game.Class.Door;
-import NightDisplay.CamOne;
 import NightDisplay.Office;
+import NightDisplay.Camera.CamOne;
 
 public class Game {
 
