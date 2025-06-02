@@ -8,9 +8,9 @@ public class Bonnie extends AnimatronicData {
         //TODO Auto-generated constructor stub
     }
 
-    private static String cam = "1A";
+    private static String cam = "cam1A";
 
-    public final String[] camera = new String[] {"1A", "1B", "5", "3", "2A", "2B"};
+    public final String[] camera = new String[] {"cam1A", "cam1B", "cam5", "cam3", "cam2A", "cam2B"};
 
     public static void setCam(String cam) {
         Bonnie.cam = cam;
