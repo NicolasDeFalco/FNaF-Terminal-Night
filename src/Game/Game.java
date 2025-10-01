@@ -5,9 +5,10 @@ import java.io.IOException;
 import Console.ConsoleClear;
 import Game.Class.Door;
 import NightDisplay.Office;
-import NightDisplay.Camera.CamOne;
+import Game.Class.Cam;
 
 public class Game {
+    private static String cam = "1A";
 
     public static void start() throws IOException, InterruptedException {
         int input = 0;
@@ -80,7 +81,7 @@ public class Game {
         while (true) {
             try {
                 ConsoleClear.clear();
-                System.out.println(CamOne.camOneAll);
+                System.out.println(Cam.showCam(cam));
                 System.out.print("Select an option: ");
                 input = Integer.parseInt(System.console().readLine());
 
@@ -88,6 +89,9 @@ public class Game {
                     case 1:
                         ConsoleClear.clear();
                         return;
+                    case 2:
+                        cam = Cam.showCamSelect(cam);
+                        ConsoleClear.clear();
                     default:
                         break;
                 }
