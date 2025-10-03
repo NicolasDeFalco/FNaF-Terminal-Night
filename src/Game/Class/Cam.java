@@ -1,9 +1,7 @@
 package Game.Class;
 
 import NightDisplay.CamSelector;
-import NightDisplay.Camera.CamOneA;
-import NightDisplay.Camera.CamOneB;
-import NightDisplay.Camera.CamOneC;
+import NightDisplay.Camera.*;
 import Console.ConsoleClear;
 
 import java.io.IOException;
@@ -33,6 +31,12 @@ public class Cam {
 
             case "1C":
                 return CamOneC.camOneCOne;
+            
+            case "2A":
+                return CamTwoA.camTwoAOne;
+            
+            case "2B":
+                return CamTwoB.camTwoBOne;
         }
         return current;
     }
@@ -53,7 +57,13 @@ public class Cam {
                         return "1B";
 
                     case "1C":
-                        return "1C";                        
+                        return "1C"; 
+                        
+                    case "2A":
+                        return "2A";
+
+                    case "2B":
+                        return "2B";
 
                     case "1":
                         return current;
