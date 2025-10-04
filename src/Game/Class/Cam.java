@@ -37,6 +37,9 @@ public class Cam {
             
             case "2B":
                 return CamTwoB.camTwoBOne;
+            
+            case "3":
+                return CamThree.camThreeOne;
         }
         return current;
     }
@@ -64,6 +67,9 @@ public class Cam {
 
                     case "2B":
                         return "2B";
+
+                    case "3":
+                        return "3";
 
                     case "1":
                         return current;
