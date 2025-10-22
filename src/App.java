@@ -52,6 +52,7 @@ public class App {
                                 ConsoleClear.clear();
                                 break;
                             case 3:
+                                ConsoleClear.clear();
                                 System.exit(0);;
                             default:
                                 System.out.println("Invalid input!");

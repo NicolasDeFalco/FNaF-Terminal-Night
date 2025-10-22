@@ -33,7 +33,7 @@ public class RightDoor {
             " |__________________________________________________|                              |_____________________________|\r\n" + //
             " |                                                  |                              |                             |\r\n" + //
             " |__________________________________________________|______________________________|_____________________________|\r\n" + //
-            " |       You look at the left door. You see 2 buttons: one to close the door and one to turn the light on.       |\r\n" + //
+            " |       You look at the right door. You see 2 buttons: one to close the door and one to turn the light on.      |\r\n" + //
             " |                                                                                                               |\r\n" + //
             " |             Turn the light on: 1            Close the door: 2             Go back to desk: 3                  |\r\n" + //
             " |_______________________________________________________________________________________________________________|";
