@@ -2,6 +2,7 @@ package Game.Class;
 
 import NightDisplay.CamSelector;
 import NightDisplay.Camera.*;
+import NightDisplay.Camera.FourB.*;
 import Console.ConsoleClear;
 
 import java.io.IOException;
@@ -40,6 +41,12 @@ public class Cam {
             
             case "3":
                 return CamThree.camThreeOne;
+            
+            case "4A":
+                return CamFourA.camFourAOne;
+
+            case "4B":
+                return CamFourB.camFourBOne;
         }
         return current;
     }
@@ -71,6 +78,12 @@ public class Cam {
                     case "3":
                         return "3";
 
+                    case "4A":
+                        return "4A";
+
+                    case "4B":
+                        return "4B";
+
                     case "1":
                         return current;
 
@@ -82,6 +95,16 @@ public class Cam {
             }
         } catch (Exception e) {}
         return current;
+    }
+
+    public static String showEvent(String events) {
+        switch (events) {
+            case "4B":
+                return FourBPoster.fourBPosterOne;
+            default:
+                break;
+        }
+        return "";
     }
 
 }

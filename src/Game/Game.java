@@ -92,6 +92,32 @@ public class Game {
                     case 2:
                         cam = Cam.showCamSelect(cam);
                         ConsoleClear.clear();
+                    case 3:
+                        if (cam == "4B" && input == 3){
+                            poster();
+                        }
+                    default:
+                        break;
+                }
+                System.out.println("Invalid input!");
+            } catch (NumberFormatException e) {}
+        }
+    }
+
+    public static void poster() throws IOException, InterruptedException {
+        int input = 0;
+
+        while (true) {
+            try {
+                ConsoleClear.clear();
+                System.out.println(Cam.showEvent(cam));
+                System.out.print("Select an option: ");
+                input = Integer.parseInt(System.console().readLine());
+
+                switch (input) {
+                    case 1:
+                        ConsoleClear.clear();
+                        return;
                     default:
                         break;
                 }
